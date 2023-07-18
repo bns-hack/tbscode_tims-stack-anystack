@@ -16,7 +16,7 @@ components:
     name: image-manager
     runnerImage: 'ghcr.io/tbscode/tims-packages_alpine-bash-yq-make-helm-jq:latest'
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     deploy:
       - |
         echo "starting deployment"
@@ -78,7 +78,7 @@ components:
     name: redis
     runnerImage: 'ghcr.io/tbscode/tims-packages_alpine-bash-yq-make-helm-jq:latest'
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     deploy:
       - |
         cat << EOF | while read eval_command; do make modify_values eval_str="$eval_command"; done
@@ -108,7 +108,7 @@ components:
     name: backend
     runnerImage: 'ghcr.io/tbscode/tims-packages_alpine-bash-yq-make-helm-jq:latest'
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     deploy:
       - |
         cat << EOF | while read eval_command; do make modify_values eval_str="$eval_command"; done
@@ -193,7 +193,7 @@ components:
     name: frontend
     runnerImage: 'ghcr.io/tbscode/tims-packages_alpine-bash-yq-make-helm-jq:latest'
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     deploy:
       - |
         cat << EOF | while read eval_command; do make modify_values eval_str="$eval_command"; done
@@ -244,7 +244,7 @@ components:
     name: ingress-manager
     runnerImage: 'ghcr.io/tbscode/tims-packages_alpine-bash-yq-make-helm-jq:latest'
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     deploy:
       - |
         cat << EOF | while read eval_command; do make modify_values eval_str="$eval_command"; done
