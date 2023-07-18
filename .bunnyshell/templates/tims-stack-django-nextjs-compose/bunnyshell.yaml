@@ -8,7 +8,7 @@ components:
     kind: Database
     name: db
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     gitApplicationPath: '/'
     dockerCompose:
       image: postgres
@@ -26,7 +26,7 @@ components:
     kind: Application
     name: front
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     gitApplicationPath: '/'
     dockerCompose:
       build:
@@ -73,7 +73,7 @@ components:
     kind: Application
     name: android
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     gitApplicationPath: '/'
     dockerCompose:
       build:
@@ -96,7 +96,7 @@ components:
     kind: Application
     name: app
     gitBranch: main
-    gitRepo: 'https://github.com/user-1024/tims-stack-anystack.git'
+    gitRepo: 'https://github.com/bns-hack/tbscode_tims-stack-anystack.git'
     gitApplicationPath: '/'
     dockerCompose:
       build:
